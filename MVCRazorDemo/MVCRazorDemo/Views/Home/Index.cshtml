@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>  /*you can style index.cshtml or any of the pages with html*/
+        div{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+
+    <div><!-- adding Razor here-->
+    <!--razor always starts with 'at' symobol-->
+        @for (int index = 0; index < 12; index++){
+            <div>@index</div> <!--will print the index here on the index page -->
+        }
+    </div>
+</body>
+</html>
